@@ -16,7 +16,7 @@ resource "aws_route_table" "private-subnet-a1-rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    // nat_gateway_id = aws_nat_gateway.lab-natgw-a.id
+    nat_gateway_id = aws_nat_gateway.nat-gw-a1.id
   }
 
   tags = {
@@ -29,7 +29,7 @@ resource "aws_route_table" "private-subnet-c1-rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    // nat_gateway_id = aws_nat_gateway.lab-natgw-a.id
+    nat_gateway_id = aws_nat_gateway.nat-gw-c1.id
   }
 
   tags = {
@@ -42,7 +42,6 @@ resource "aws_route_table" "private-subnet-a2-rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    // nat_gateway_id = aws_nat_gateway.lab-natgw-a.id
   }
 
   tags = {
@@ -55,7 +54,6 @@ resource "aws_route_table" "private-subnet-c2-rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    // nat_gateway_id = aws_nat_gateway.lab-natgw-a.id
   }
 
   tags = {
