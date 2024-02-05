@@ -40,10 +40,6 @@ resource "aws_route_table" "private-subnet-c1-rt" {
 resource "aws_route_table" "private-subnet-a2-rt" {
   vpc_id = aws_vpc.lab-vpc.id
 
-  route {
-    cidr_block = "0.0.0.0/0"
-  }
-
   tags = {
     Name = "private-subnet-a2-rt"
   }
@@ -51,10 +47,6 @@ resource "aws_route_table" "private-subnet-a2-rt" {
 
 resource "aws_route_table" "private-subnet-c2-rt" {
   vpc_id = aws_vpc.lab-vpc.id
-
-  route {
-    cidr_block = "0.0.0.0/0"
-  }
 
   tags = {
     Name = "private-subnet-c2-rt"
