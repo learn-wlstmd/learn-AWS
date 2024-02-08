@@ -1,3 +1,4 @@
+<!-- index.php source -->
 <?php include "dbinfo.inc"; ?>
 <html>
 <body>
